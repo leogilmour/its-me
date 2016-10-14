@@ -1,5 +1,7 @@
 @extends('layouts.layout')
-
+@section('styles')
+    <link href="/css/liberty.css" rel="stylesheet">
+@stop
 @section('content')
 
 <div class="title">
@@ -17,6 +19,7 @@
 		<li><p>Maths and coding tutor</p></li>
 		<li><a href="https://www.linkedin.com/in/leo-gilmour">My linkedin &#9755;</a></li>
 	</ul>
+	<img src="/images/green-army-men.png">
 </div>
 
 @stop
