@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/liberty', function () {
     return view('liberty');
 });
+Route::get('/halloween', function () {
+    return view('halloween');
+});

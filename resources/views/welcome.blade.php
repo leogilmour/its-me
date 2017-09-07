@@ -1,5 +1,7 @@
 @extends('layouts.layout')
-
+@section('styles')
+    <link href="/css/home.css" rel="stylesheet">
+@stop
 @section('content')
 
 <div class="title">
@@ -9,13 +11,12 @@
 <div class="info">
 	<ul>
 		<li class="portfolio">
-			<a>London based web developer &#9755;</a>
-			<ul class="dropdown">
-				<li><a href="http://ffad.me" target="_blank">Katya DJ</a></li>
-			</ul>
+			<p>London based web developer</p>
+			<!-- <ul class="dropdown"> -->
+			<!-- </ul> -->
 		</li>
-		<li><p>Maths and coding tutor</p></li>
-		<li><a href="https://www.linkedin.com/in/leo-gilmour">My linkedin &#9755;</a></li>
+		<li><a href="https://www.linkedin.com/in/leo-gilmour">Here's my linkedin &#9755;</a></li>
+		<li><p>I like teaching maths and coding</p></li>
 	</ul>
 </div>
 
