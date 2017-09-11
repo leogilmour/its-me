@@ -1,4 +1,4 @@
- html, body 			{ background-image: none; }
+ html, body 			{ background-image: none; overflow: scroll; }
  h1 { font-family: Special Elite;
 font-weight: normal;
 font-size: 72px;
@@ -25,4 +25,20 @@ text-align: center;
 @media all and (max-width: 600px) {
 h1 { font-size: 15vw; }
 h2 { font-size: 12vw; }
+}
+
+div.guest {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.guest h2 {    font-family: Special Elite; font-size: 24px; }
+
+div#list {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
 }

@@ -5,8 +5,22 @@
 
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<title>
+<?php 
+if ($_SERVER['REQUEST_URI'] == "/halloween") {
+    echo "Halloween 2017";
+} else {
+    ?>{{ config('app.name', 'Leo Gilmour') }} <?php
+}
+?>
+</title>
 
-<title>{{ config('app.name', 'Leo Gilmour') }}</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Styles -->
 <link href="/css/app.css" rel="stylesheet">

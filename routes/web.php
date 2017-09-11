@@ -20,3 +20,6 @@ Route::get('/liberty', function () {
 Route::get('/halloween', function () {
     return view('halloween');
 });
+
+Route::get('/halloween/guests', 'PartyController@guests');
+Route::get('/halloween/guests/{character}', 'PartyController@rsvp');
