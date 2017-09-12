@@ -7,6 +7,5 @@
 <h2>Save the date for</h2>  
 <h1>HALLOWE'EN</h1>  
 <h2>4th November 2017</h2>
-<h2>Winslow MK18 3HL</h2>
-<p>More details and theme to follow. <br><br>Please let me know asap if you cannot make it.</p>
+<h2>Winslow</h2>
 @stop
