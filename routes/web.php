@@ -23,3 +23,4 @@ Route::get('/halloween', function () {
 
 Route::get('/halloween/guests', 'PartyController@guests');
 Route::get('/halloween/guests/{character}', 'PartyController@rsvp');
+Route::post('/halloween/guests/{character}', 'PartyController@store');
