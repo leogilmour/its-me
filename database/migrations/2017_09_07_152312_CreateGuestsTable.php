@@ -15,14 +15,14 @@ class CreateGuestsTable extends Migration
     {
         Schema::create('guests', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('party');
-            $table->string('guest');
-            $table->string('character');
-            $table->string('image');
-            $table->string('diet');
-            $table->string('driving');
-            $table->string('paid');
-            $table->string('extra');
+            $table->string('party')->nullable();
+            $table->string('guest')->nullable();
+            $table->string('character')->nullable();
+            $table->string('image')->nullable();
+            $table->string('diet')->nullable();
+            $table->string('driving')->nullable();
+            $table->string('paid')->nullable();
+            $table->string('extra')->nullable();
             $table->timestamps();
         });
     }

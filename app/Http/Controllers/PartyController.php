@@ -11,9 +11,11 @@ use App\Http\Requests;
 
 class PartyController extends Controller
 {
-    public function guests() {
-		$guests = Guest::all();
-		return view('guests', ['guests' => $guests]);
+    public function guests($paid = null) {
+		$guests = Guest::orderBy('character')
+				->where('character', '!=', '')
+				->get();
+		return view('guests', ['guests' => $guests, 'paid' => $paid]);
 	}
 	public function rsvp($character) {
 		$guest = Guest::where('character', $character)->first();
@@ -25,18 +27,55 @@ class PartyController extends Controller
 			'guest' => 'required|max:255',
 		]);
 
-		if ($validator->fails()) {
-			return redirect('/halloween/guests/' . $request->character)
+		if ($request->dog != "tipsy" && $request->dog != "Tipsy") {
+			return redirect('/halloween/guest/' . $request->character)
 				->withInput()
-				->withErrors($validator);
+				->withErrors("Incorrect dogs name");
+		}
+
+		if ($validator->fails()) {
+			return redirect('/halloween/guest/' . $request->character)
+				->withInput()
+				->withErrors("You forgot your name!");
 		}
 
 		$guest = Guest::find($request->id);
-		var_dump($guest);
-		die;
-		$guest->extra = $request->extra;
+        $guest->guest = $request->guest;
+        $guest->diet = $request->diet;
+        $guest->driving = $request->driving;
+        $guest->extra = $request->extra;
+        $guest->music = $request->song;
 		$guest->save();
 
-		return redirect('/');
+		return redirect('/halloween/guests')
+			->withErrors("Thank you " . $request->guest . ". Dying to see you!");;
+	}
+	public function declined(Request $request) {
+
+		$validator = Validator::make($request->all(), [
+			'name' => 'required|max:255',
+		]);
+
+		if ($request->dog != "tipsy" && $request->dog != "Tipsy") {
+			return redirect('/halloween')
+				->withInput()
+				->withErrors("Incorrect dogs name");
+		}
+
+		if ($validator->fails()) {
+			return redirect('/halloween')
+				->withInput()
+				->withErrors("You forgot your name!");
+		}
+
+		$guest = new Guest;
+        $guest->guest = $request->name;
+        $guest->party = "20171104";
+        $guest->extra = "declined";
+		$guest->save();
+
+		return redirect('/halloween')
+				->withErrors("Thank you " . $request->name . ". R.I.P. You will be missed.");
+;
 	}
 }

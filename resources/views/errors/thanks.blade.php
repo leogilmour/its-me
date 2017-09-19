@@ -1,14 +1,14 @@
 
-@if (count($errors) > 0)
+@if (count($messages) > 0)
     <!-- Form Error List -->
     <div class="alert alert-danger">
-        <strong>Spooky message:</strong>
+        <strong>Success!</strong>
 
         <br><br>
 
         <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
+            @foreach ($messages->all() as $message)
+                <li>{{ $message }}</li>
             @endforeach
         </ul>
     </div>
