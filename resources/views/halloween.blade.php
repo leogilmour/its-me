@@ -8,7 +8,7 @@
 <div class="invite intro">
 	<h1>HALLOWE'EN</h1>  
 	<h2>4th November 2017</h2>
-	<h2>Winslow</h2>
+	<h2>&#9884;</h2>
 </div>
 <hr>
 <div class="invite">
@@ -25,13 +25,13 @@
 			<p>6pm: Dressing up - don't forget your deadliest dancing shoes</p>
 		</li>
 		<li>
-			<p>7pm: Dangerous Drinks & Fearsome Fireworks</p>
+			<p>7pm: Dangerous Drinks - accompanied by a kamikaze cocktail of explosions and weapons tests. Molotov cocktails optional.</p>
 		</li>
 		<li>
 			<p>8pm: Devilish Dinner</p>
 		</li>
 		<li>
-			<p>Xpm: Demon Dancing</p>
+			<p>Xpm: Dancing Demons</p>
 		</li>
 	</ul>
 	<h3>Sunday 5th</h3>
@@ -53,7 +53,7 @@
 		</li>
 		<li>
 			<p>Trains to Milton Keynes are fastest - 35mins - from Euston. Slower train to Aylesbury from Marylebone.</p>
-			<p>Winslow Cars for cheap cabs: 01296 715 222 ...(There is also bus from Aylesbury if you fancy it).</p>
+			<p>Cheap cabs: 01296 715 222 ...(There is also bus from Aylesbury if you fancy it).</p>
 		</li>
 	</ul>
 </div>
