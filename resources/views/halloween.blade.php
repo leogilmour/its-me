@@ -64,7 +64,7 @@
 	<p>The correct choice. Instead of BYOB, I am collecting £10.</p>
 	<p>Have your debit card ready and cough up here:</p>
 	<a href="https://monzo.me/leonoragilmour/10.00?d=From:%20your%20name" class="button">MONZO</a>
-	<p>Once I've received your payment, I will unlock the guest list for you to choose your alias and fill out the RSVP form.</p>
+	<p>Once I've received your payment, I will contact you with the unlocked guest list where you can choose your alias and fill out the RSVP form.</p>
 	<p>Preview the guest list here:</p>
 	<a href="/halloween/guests" class="button">GUESTS</a>
 	<p><em>Note, only one guest per identity.</em></p>
