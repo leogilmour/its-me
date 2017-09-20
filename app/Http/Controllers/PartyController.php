@@ -48,7 +48,7 @@ class PartyController extends Controller
 		$guest->save();
 
 		return redirect('/halloween/guests')
-			->withErrors("Thank you " . $request->guest . ". Dying to see you!");;
+			->withErrors("Thank you " . $request->guest . ". Dying to see you there!");;
 	}
 	public function declined(Request $request) {
 
