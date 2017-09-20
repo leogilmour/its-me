@@ -10,7 +10,8 @@
 
 <div class="info">
 	<ul>
-		<li class="portfolio">
+		{{--  <li class="portfolio">  --}}
+		<li>
 			<p>London based web developer</p>
 			<!-- <ul class="dropdown"> -->
 			<!-- </ul> -->
