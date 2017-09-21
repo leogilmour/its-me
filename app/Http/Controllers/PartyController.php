@@ -40,15 +40,24 @@ class PartyController extends Controller
 		}
 
 		$guest = Guest::find($request->id);
-        $guest->guest = $request->guest;
-        $guest->diet = $request->diet;
-        $guest->driving = $request->driving;
-        $guest->extra = $request->extra;
-        $guest->music = $request->song;
-		$guest->save();
+		if ($guest->guest) {
+			return redirect('/halloween/guests/ive-paid')
+			->withInput()
+			->withErrors("Too slow!! Sorry but " . $guest->guest . " has RSVP'd before you... Please choose another identity");
+		}
+		else {
+			$guest->guest = $request->guest;
+			$guest->diet = $request->diet;
+			$guest->driving = $request->driving;
+			$guest->extra = $request->extra;
+			$guest->music = $request->song;
+			$guest->save();
+			return redirect('/halloween/guests')
+				->withErrors("Thank you " . $request->guest . ". Dying to see you there!");;
+		}
 
-		return redirect('/halloween/guests')
-			->withErrors("Thank you " . $request->guest . ". Dying to see you there!");;
+		return redirect('/');
+
 	}
 	public function declined(Request $request) {
 
