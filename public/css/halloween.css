@@ -1,4 +1,39 @@
- html, body 			{ background-image: none; }
+ html, body 			{ background-image: none; overflow: scroll; }
+ .container {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    margin-bottom: 5%;
+ }
+
+input.hidden {
+    display: none;
+}
+
+button, a.button {
+    display: block;
+    padding: 5px;
+    width: 175px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-family: creepster;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+button:hover, a.button:hover {
+    background-color: white;
+    color:red;
+}
+div.invite {
+    padding-top: 5vh;
+}
  h1 { font-family: Special Elite;
 font-weight: normal;
 font-size: 72px;
@@ -7,6 +42,7 @@ color: #FFFFFF;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:  rgba(255, 0, 0, 0.51);
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-bottom: 5vh; 
 }
 h2 {
 font-family: Creepster;
@@ -17,12 +53,84 @@ background: -webkit-gradient(linear, left top, left bottom, from(#D10000), to(rg
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+h3 {
+    font-family: Special Elite;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgba(255, 0, 0, 0.51);
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.78);
+}
 p { font-family: Special Elite; 
-font-size: 14px;
-text-align: center;
+font-size: 15px;
+letter-spacing: 2px;
+line-height: 24px;
 }
 
 @media all and (max-width: 600px) {
-h1 { font-size: 15vw; }
+h1 { font-size: 12vw; }
 h2 { font-size: 12vw; }
+    #list div.image {
+        height: 200px;
+    }
+
 }
+
+@media all and (max-width: 400px) {
+    #list div.image {
+        height: 120px;
+    }
+}
+
+div.guest {
+    margin: auto;
+}
+
+div.taken {
+    opacity: 0.9;
+}
+
+div.guest h2.primary {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(171, 171, 171, 0.53)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.guest:hover h2.primary {
+    display: none;
+}
+
+div.guest h2.secondary {
+    display: none;
+}
+
+div.guest:hover h2.secondary {
+    display: block;
+}
+
+div.image {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.guest h2 {    font-family: Special Elite; font-size: 24px; }
+
+div#list {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+hr {
+    border: none;
+    box-shadow: 0px 0px 13px 3px red;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.alert, .alert-danger { color: red; font-family: special elite; }
