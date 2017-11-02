@@ -21,8 +21,9 @@
         <div class="guest">
         @endif
             @if($guest->guest)
-                <h2 class="primary">{{ $guest->guest }}</h2>
-                <h2 class="secondary">{{ $guest->character }}</h2>
+                <h2>{{ $guest->guest }}</h2>
+                {{--  <h2 class="primary">{{ $guest->guest }}</h2>  --}}
+                {{--  <h2 class="secondary">{{ $guest->character }}</h2>  --}}
             @else
                 <h2>{{ $guest->character }}</h2>
             @endif

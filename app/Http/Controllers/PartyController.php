@@ -12,8 +12,9 @@ use App\Http\Requests;
 class PartyController extends Controller
 {
     public function guests($paid = null) {
-		$guests = Guest::orderBy('character')
+		$guests = Guest::orderBy('driving', 'desc')
 				->where('character', '!=', '')
+				->where('guest', '!=', '')
 				->get();
 		return view('guests', ['guests' => $guests, 'paid' => $paid]);
 	}
@@ -43,7 +44,7 @@ class PartyController extends Controller
 		if ($guest->guest) {
 			return redirect('/halloween/guests/ive-paid')
 			->withInput()
-			->withErrors("Too slow!! Sorry but " . $guest->guest . " has RSVP'd before you... Please choose another identity");
+			->withErrors("<strong>Too slow!! Sorry but " . $guest->guest . " has RSVP'd before you... Please choose another identity<strong>");
 		}
 		else {
 			$guest->guest = $request->guest;
