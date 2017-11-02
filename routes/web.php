@@ -26,3 +26,6 @@ Route::get('/halloween/guests/{paid?}', 'PartyController@guests');
 
 Route::get('/halloween/guest/{character}', 'PartyController@rsvp');
 Route::post('/halloween/guest/{character}', 'PartyController@store');
+
+Route::get('/wildcard/admin', 'WildcardController@admin');
+Route::get('/wildcard/admin/{party}', 'WildcardController@party');
