@@ -3,7 +3,8 @@
 h1 				        { font-family: 'Ewert', cursive;  margin-top: 0; margin-bottom: 5vh; font-size: 57px; color: #de0b28; text-align: center; }
 h2, h3, h4, a, p, li    { font-family: 'Tajawal', sans-serif; }
 a                       { text-decoration: none; color: #de0b28; }
-a:hover     { color: #ba8b45; }
-a:hover h1 { color: rgb(160, 5, 26); }
-.leo-divider            { text-align: center; font-size: 24px; }
+a:hover                 { color: #ba8b45; }
+a:hover h1              { color: rgb(160, 5, 26); }
+h2, .leo-divider        { text-align: center; font-size: 24px; }
 div                     { max-width: 800px; margin: auto; }
+ul                      { list-style-position: outside; list-style-type: circle; }
