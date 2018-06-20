@@ -13,7 +13,7 @@
 	<ul>
 		{{--  <li class="portfolio">  --}}
 		<li>
-			<p>London based web developer on <a href="https://www.linkedin.com/in/leo-gilmour">LinkedIn &#9755;</a></p>
+			<p>London based web developer on <a target="_blank" href="https://www.linkedin.com/in/leo-gilmour">LinkedIn &#9755;</a></p>
 			<!-- <ul class="dropdown"> -->
 			<!-- </ul> -->
 		</li>
