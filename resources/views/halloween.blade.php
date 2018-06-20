@@ -37,11 +37,7 @@
 	<h3>Sunday 5th</h3>
 	<ul>
 		<li>
-			<p>Some form of breakfast</p>
-		</li>
-		<li>
-			<p>Hungover paintballing</p>
-			<p>Paintballing is midday - 4pm in nearby town of Buckingham (15min drive) and would be around £20. Subject to demand.</p>
+			<p>Some form of brunch, relaxin' and recuperatin'</p>
 		</li>
 	</ul>
 	<h3>Sleep and travel</h3>
