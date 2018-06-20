@@ -21,9 +21,9 @@ if ($_SERVER['REQUEST_URI'] == "/halloween") {
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
-
-<!-- Styles -->
-<link href="/css/app.css" rel="stylesheet">
+<meta property="og:title" content="Leo Gilmour" />
+<meta property="og:description" content="Leo Gilmour is a London based web developer, tutor, and occasional event planner." />
+<meta property="og:image" content="http://leogilmour.com/images/me-in-russia.jpg" />
 
 <!-- Scripts -->
 <script>
