@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 @section('styles')
-    <link href="/css/home.css" rel="stylesheet">
+	<link href="/css/app.css" rel="stylesheet">	
+	<link href="/css/home.css" rel="stylesheet">
 @stop
 @section('content')
 
@@ -17,7 +18,8 @@
 			<!-- </ul> -->
 		</li>
 		<li><a href="https://www.linkedin.com/in/leo-gilmour">Here's my linkedin &#9755;</a></li>
-		<li><p>I like teaching maths and coding</p></li>
+		<li><p>I tutor in Coding, Maths, Physics, and Science</p></li>
+		<li><a href="/learn-to-code">Learn to code &#9755;</a></li>
 	</ul>
 </div>
 
