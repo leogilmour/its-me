@@ -19,6 +19,7 @@
 		<li>You want a job</li>
 		<li>Remote working</li>
 		<li>Freelancing</li>
+		<li>You like learning</li>
 		<li>You enjoy problem solving and being creative</li>
 		<li>Get a promotion or earn more respect in your job</li>
 		<li>Build your own site, start your own company, be your own boss</li>
@@ -40,9 +41,11 @@
 	<h4>A taste of web development</h4>
 	<p><ul>
 		<li>Try General Assembly's short online course <a target="_blank" href="https://dash.generalassemb.ly/">Dash</a></li>
+		<li><a targe="_blank" href="https://codepen.io/">Codepen</a> is great to quickly try out html + css + js in your browser</li>
 	</ul></p>
 	<h4>Build your own <a target="_blank" href="https://www.codecademy.com/learn/make-a-website">website</a></h4>
 	<p><ul>
+		<li><a target="_blank" href="https://www.google.com/chrome/">Google Chrome</a> and it's developer tools to test your sites</li>
 		<li><a target="_blank" href="https://code.visualstudio.com/">VS Code</a> to develop your code</li>
 		<li>The skeleton of your site will be <a target="_blank" href="https://www.codecademy.com/learn/learn-html">HTML</a></li>
 		<li>General design of your site will be <a target="_blank" href="https://www.codecademy.com/learn/learn-css">CSS</a></li>
@@ -80,7 +83,8 @@
 		<li>The community is great on <a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a>. There's usually someone else who has had the same question or error message as you! I couldn't live without it.</li>
 		<li><a target="_blank" href="https://www.w3schools.com/">w3schools</a> is really great as a simple reference to look up syntax and functions in a few languages</li>
 		<li>You can always refer to the documentation of the language you're learning</li>
-		<li>I really like <a target="_blank" href="https://daylerees.com/books/">Dayle Rees'</a> ebooks for a clean read
+		<li>I really like <a target="_blank" href="https://daylerees.com/books/">Dayle Rees'</a> ebooks for a clean read</li>
+		<li><a href="https://technation.io/" target="_blank">Tech Nation</a> has great info for tech entrepreneurs</li>
 	</ul></p>
 	<h4>Free online courses:</h4>
 	<p><ul>
@@ -91,13 +95,20 @@
 	</ul></p>
 	<h4>Find help in person:</h4>
 	<p><ul>
-		<li>Programming workshops with <a target="_blank" href="https://codebar.io/">codebar</a></li>
 		<li><a target="_blank" href="https://www.codefirstgirls.org.uk/">Code First: Girls</a>, free for students (or recently gradudated), women only</li>
+		<li>WOC should check out <a target="_blank" href="https://home.blackgirl.tech/">blackgirl.tech</a> for events and code meet ups</li>
+		<li>Programming workshops with <a target="_blank" href="https://codebar.io/">codebar</a> (international)</li>
+		<li>Events and podcasts with <a target="_blank" href="http://www.geekgirlmeetup.co.uk/">GeekGirlMeetup</a></li>
 		<li>There are many courses and meetups running, tailored to different languages and audiences</li>
 		<li>Email me at <a href="mailto:leonoragilmour@sky.com">leonoragilmour@sky.com</a></li>
 	</ul></p>
 	<h4>Advice</h4>
-	<p>It's best to learn on a project, for yourself or someone else - you need something to get you through the initial work of learning new syntax. As usual, never be afraid to ask for help, and ask loads of questions.</p>
+	<p><ul>
+		<li>It's best to learn on a project, for yourself or someone else - you need something to get you through the initial work of learning new syntax</li>
+		<li>Never be afraid to ask for help - there's always something to learn or a new perspective</li>
+		<li>Ask loads of questions</li>
+		<li>Don't give up. Things break, it can be frustrating but <em>"If at first you don't succeed, try, try, try again"</em>.<br>In case you're unconvinced, you're not alone in this: <a href="http://www.commitlogsfromlastnight.com/">Commit Logs From Last Night</a> (cn: swear words)</li>
+	</ul></p>
 		{{-- Become a video game developer -> C#, like C++, is heavily used in video game development, so any aspiring video game developers would do well to learn both of them. --}}
 		{{-- Become an app developer -> Python or Swift but I would recommend browser apps before trying to launch a native app --}}
 <div><p class="leo-divider">🐆</p></div>
