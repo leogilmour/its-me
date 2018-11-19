@@ -76,13 +76,18 @@
 		Once you get the hang of things, look into programming concepts such as "object orientated programming" (OOP). Also handy, an understanding of servers, domains and other infrastructure.
 	</p>
 
+	<!-- for kids
+	- typing games
+		Code Combat's Dungeon game https://codecombat.com/play/dungeon (Python, Javascript) intro game is free -->
+
 	<div><p class="leo-divider">🐆</p></div>
 		
 	<h4>Need help?</h4>
 	<p><ul>
 		<li>The community is great on <a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a>. There's usually someone else who has had the same question or error message as you! I couldn't live without it.</li>
-		<li><a target="_blank" href="https://www.w3schools.com/">w3schools</a> is really great as a simple reference to look up syntax and functions in a few languages</li>
+		<li><a target="_blank" href="https://www.w3schools.com/">w3schools</a> is really great as a simple reference to look up syntax and functions in a few languages, especially for beginners</li>
 		<li>You can always refer to the documentation of the language you're learning</li>
+		<li>The <a target="_blank" href="https://developer.mozilla.org/	">MDN web docs by Mozilla</a> are great for a range of languages and concepts, like JavaScript</li>
 		<li>I really like <a target="_blank" href="https://daylerees.com/books/">Dayle Rees'</a> ebooks for a clean read</li>
 		<li><a href="https://technation.io/" target="_blank">Tech Nation</a> has great info for tech entrepreneurs</li>
 	</ul></p>
