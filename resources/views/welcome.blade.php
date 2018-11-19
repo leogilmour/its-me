@@ -19,6 +19,7 @@
 		</li>
 		<li><a href="/learn-to-code">Learn to code &#9755;</a></li>
 		<li><p>I tutor in Maths, Coding, and Science</p></li>
+		<li><a target="_blank" href="http://instagram.com/themathematicalmermaid/">@themathematicalmermaid &#9755;</a></li>
 	</ul>
 </div>
 
