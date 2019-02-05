@@ -17,22 +17,22 @@ Route::get('/', function () {
 Route::get('/learn-to-code', function () {
     return view('learn');
 });
-Route::get('/liberty', function () {
-    return view('liberty');
-});
-Route::get('/halloween', function () {
-    return view('halloween');
-});
+// Route::get('/liberty', function () {
+    // return view('liberty');
+// });
+// Route::get('/halloween', function () {
+    // return view('halloween');
+// });
 // Route::post('/halloween', 'PartyController@declined');
 
-Route::get('/halloween/guests/{paid?}', 'OldPartyController@guests');
+// Route::get('/halloween/guests/{paid?}', 'OldPartyController@guests');
 
 // Route::get('/halloween/guest/{character}', 'PartyController@rsvp');
 // Route::post('/halloween/guest/{character}', 'PartyController@store');
 
-Route::get('/index.html', function () {
-    return view('ss');
-});
+// Route::get('/index.html', function () {
+    // return view('ss');
+// });
 
 Route::get('/parties/{slug}', 'PartiesController@invite');
 
