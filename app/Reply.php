@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Guest extends Authenticatable
+class Reply extends Authenticatable
 {
     use Notifiable;
 
@@ -15,7 +15,9 @@ class Guest extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'allergies'
+        'party_id',
+        'reply',
+        'plus_one_id'
     ];
 
     /**
@@ -26,18 +28,13 @@ class Guest extends Authenticatable
     protected $hidden = [
     ];
 
-    public function parties()
+    public function party()
 	{
-		return $this->belongsToMany(Party::class);
-    }
+		return $this->belongsTo(Party::class);
+	}
 
-    public function replies()
+    public function guest()
 	{
-		return $this->hasMany(Reply::class);
-    }
-    
-    public function cupids()
-    {
-        return $this->hasMany(Cupid::class);
-    }
+		return $this->belongsTo(Guest::class);
+	}
 }
