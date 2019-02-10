@@ -15,7 +15,6 @@ use App\Cupid;
 
 use Redirect;
 use Input;
-use NumberFormatter;
 
 class PartiesController extends Controller
 {
@@ -23,8 +22,8 @@ class PartiesController extends Controller
     {
         $party = Party::where('slug', $slug)->first();
 			$party->date = date("jS F Y", strtotime($party->date));
-			$formatter = new NumberFormatter("en", NumberFormatter::SPELLOUT);
-			$hour = $formatter->format(date("g", strtotime($party->time)));
+			//$formatter = new \NumberFormatter("en", \NumberFormatter::SPELLOUT);
+			$hour = date("g", strtotime($party->time));
 			$day = date("a", strtotime($party->time)) === 'pm' ? 'evening' : 'morning';
 			$party->time = $hour . " o'clock in the " . $day;
 			$party->deadline = date("jS F", strtotime($party->deadline)); // Add day of the week for emphasis
