@@ -13,5 +13,5 @@
     <a class="secondary" href="/parties/{{ $party->slug }}/decline">Decline</a>
 <p class="serif"><strong>R.S.V.P. before {{ $party->deadline }}</strong></p>
 <hr class="styled">
-<p class="serif details">{{ $party->description }}</p>
+<div class="serif details">{!! $party->description !!}</div>
 @stop

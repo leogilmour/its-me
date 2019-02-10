@@ -78,11 +78,11 @@ p em {
     font-style: unset;
 }
 
-p.serif.details {
+div.serif.details p {
     text-align: left;
 }
 
-input, textarea, p.serif {
+input, textarea, p.serif, div.serif p {
     font-family: Georgia, serif;
     letter-spacing: 0.03em;
     font-size: 14px;
