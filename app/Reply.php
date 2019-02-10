@@ -28,6 +28,16 @@ class Reply extends Authenticatable
     protected $hidden = [
     ];
 
+    public function scopeAttending($query)
+	{
+		return $query->where('reply', 1);
+    }
+    
+    public function scopeNotAttending($query)
+	{
+		return $query->where('reply', 0);
+	}
+
     public function party()
 	{
 		return $this->belongsTo(Party::class);

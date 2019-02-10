@@ -148,3 +148,7 @@ hr.styled::after, hr.styled {
     border: none;
     color: black;
 }
+
+@media (any-hover: none) {
+    #copy-button { display: none; }
+}
