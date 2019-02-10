@@ -45,3 +45,5 @@ Route::post('/parties/{slug}/decline', 'PartiesController@store_decline');
 
 Route::get('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@plus_one');
 Route::post('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@store_plus_one');
+
+Route::get('/wildcardmin/{id}', 'WildcardController@party');
