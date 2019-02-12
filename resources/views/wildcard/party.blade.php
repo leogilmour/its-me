@@ -12,7 +12,13 @@
         <div class="name"><p>{{ $g['guest']->name }} &</p></div>
         <div class="plus-one-id"><p>{{ $g['plus_one']->id }}</p></div>
         <div class="plus_one"><p>{{ $g['plus_one']->name }}</p></div>
-        <div class="fact"><p>- {{ isset($g['fact']->cupid_fact) ? $g['fact']->cupid_fact : 'awaiting' }}</p></div>
+        <div class="fact">
+            @if (isset($g['fact']->cupid_fact))
+                <p>- {{ $g['fact']->cupid_fact }}</p>
+            @else
+                <p>- <a href="{{ url("/parties/" . $party->slug . "/" . $g['guest']->id . "/" . str_slug($g['plus_one']->name, '-')) }}">RSVP</a></p>
+            @endif
+        </div>
     </div>
 @endforeach
 <h3>Absent</h3>
