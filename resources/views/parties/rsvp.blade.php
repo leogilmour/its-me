@@ -29,7 +29,7 @@
                     <input type="text" name="plus_one" id="plus_one" class="form-control{{ isset($guest->name) ? ' disabled' : '' }}" {{ isset($guest->name) ? 'disabled' : '' }} placeholder="Your plus one's name" value="{{ old('plus_one') ?: (isset($guest->name) ? $guest->name : '') }}">
                 </div>
                 <div class="col-sm-6">
-                    <textarea name="fact" id="fact" class="form-control" placeholder="A mysterious fact on {{ isset($guest->name) ? $guest->name : 'your plus one' }}. Outrageous or strange facts work best.">{{ old('fact') }}</textarea>
+                    <textarea name="fact" id="fact" class="form-control" placeholder="A mysterious fact on {{ isset($guest->name) ? $guest->name : 'your plus one' }}. Outrageous or strange anecdotes work best.">{{ old('fact') }}</textarea>
                 </div>
                 <div class="col-sm-6">
                     <input type="text" name="password" id="password" class="form-control" placeholder="Greek name for Cupid?" value="{{ old('password') }}">
