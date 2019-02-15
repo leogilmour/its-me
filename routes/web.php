@@ -34,16 +34,20 @@ Route::get('/learn-to-code', function () {
     // return view('ss');
 // });
 
-Route::get('/parties/{slug}', 'PartiesController@invite');
+// Route::get('/parties/{slug}', 'PartiesController@invite');
 
-Route::get('/parties/{slug}/rsvp', 'PartiesController@rsvp');
-Route::post('/parties/{slug}/rsvp', 'PartiesController@store');
-Route::get('/parties/{slug}/attending', 'PartiesController@attending');
+// Route::get('/parties/{slug}/rsvp', 'PartiesController@rsvp');
+// Route::post('/parties/{slug}/rsvp', 'PartiesController@store');
+// Route::get('/parties/{slug}/attending', 'PartiesController@attending');
 
-Route::get('/parties/{slug}/decline', 'PartiesController@decline');
-Route::post('/parties/{slug}/decline', 'PartiesController@store_decline');
+// Route::get('/parties/{slug}/decline', 'PartiesController@decline');
+// Route::post('/parties/{slug}/decline', 'PartiesController@store_decline');
 
-Route::get('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@plus_one');
-Route::post('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@store_plus_one');
+// Route::get('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@plus_one');
+// Route::post('/parties/{slug}/{guest_id}/{guest}', 'PartiesController@store_plus_one');
 
-Route::get('/wildcardmin/{id}', 'WildcardController@party');
+// Route::get('/wildcardmin/{id}', 'WildcardController@party');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index');
+// 
