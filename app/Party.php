@@ -25,10 +25,10 @@ class Party extends Model
     protected $hidden = [
     ];
 
-    // public function scopeFuture($query)
-	// {
-	// 	return $query->whereNotNull('date');
-    // }
+    public function scopeUpcoming($query)
+	{
+		return $query->where('date', '>', date('Y-m-d'));
+    }
     
     // public function scopeFindSlug($query, $slug)
     // {
