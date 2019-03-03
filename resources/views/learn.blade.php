@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.page')
 @section('styles')
     <link href="/css/learn.css" rel="stylesheet">
 @stop
@@ -117,7 +117,7 @@
 		{{-- Become a video game developer -> C#, like C++, is heavily used in video game development, so any aspiring video game developers would do well to learn both of them. --}}
 		{{-- Become an app developer -> Python or Swift but I would recommend browser apps before trying to launch a native app --}}
 <div><p class="leo-divider">🐆</p></div>
-
+{{-- Always learning: What personal training am I looking at now?  Train gif, pole fitness, mandarin, reactjs, teaching, public speaking --}}
 </div>
 
 @stop

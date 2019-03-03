@@ -5,6 +5,7 @@
 	@include('includes.head')
 
 	@yield('styles')
+    <link href="/css/base.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,17 +14,17 @@
 
 		<div id="main">
 			@yield('content')
-		</div>
+	</div>
 
 		
 	</div>
 	<footer>
-		{{-- this is driving me insane. --}}
+		<!-- hello -->
 		<!-- <script src="/js/app.js"></script> -->
 		
 		@yield('js')
 
-		@yield('footer')
+		@include('includes.footer')
 	</footer>
 </body>
 
